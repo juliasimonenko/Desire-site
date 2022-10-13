@@ -1,0 +1,97 @@
+.steps {
+  padding: 80px 0;
+
+  &__title {
+    margin-bottom: 32px;
+  }
+
+  &__items {
+    display: flex;
+    border-bottom: 2px solid rgba(#363838, 0.7);
+    position: relative;
+
+    &::after {
+      content: '';
+      position: absolute;
+      left: -1px;
+      bottom: -5px;
+      width: 10px;
+      height: 10px;
+      border-radius: 100%;
+      background-color: var(--dark-color);
+    }
+  }
+
+  &__card {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    margin-bottom: 15px;
+
+    &--cons {
+      margin-right: 10px;
+      width: 41px;
+      height: 42px;
+    }
+
+    &--prod {
+      margin-right: 13px;
+      width: 38px;
+      height: 34px;
+    }
+
+    &--tape {
+      margin-right: 8px;
+      width: 38px;
+      height: 26px;
+    }
+  }
+
+  &__item {
+    &:nth-child(2) {
+      margin-left: 350px;
+      position: relative;
+
+      &::after {
+        content: '';
+        position: absolute;
+        left: 0;
+        bottom: 0;
+        height: 20px;
+        width: 2px;
+        background-color: var(--dark-color);
+      }
+    }
+
+    &:nth-child(3) {
+      margin-top: 21px;
+      margin-left: 316px;
+      position: relative;
+
+      &::after {
+        content: '';
+        position: absolute;
+        left: 0;
+        top: -22px;
+        height: 20px;
+        width: 2px;
+        background-color: var(--dark-color);
+      }
+    }
+  }
+
+  &__subtitle {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 23px;
+    color: var(--dark-color);
+  }
+
+  &__descr {
+    width: 246px;
+    margin-bottom: 10px;
+  }
+
+}
+

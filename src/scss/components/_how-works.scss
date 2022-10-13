@@ -1,0 +1,37 @@
+.how-works {
+  padding-bottom: 40px;
+  background-image: url('../../img/how-works-bg.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  min-height: 616px;
+
+  &__container {
+    padding-top: 172px;
+  }
+
+  &__title {
+    position: relative;
+    margin: 0;
+    margin-bottom: 44px;
+    width: 525px;
+    text-align: left;
+    font-weight: 700;
+    font-size: 60px;
+    line-height: 80px;
+
+    &::after {
+      position: absolute;
+      content: '';
+      left: 0;
+      top: 111%;
+      width: 200px;
+      height: 1px;
+      background: var(--nevada-color);
+    }
+  }
+
+  &__descr {
+    width: 525px;
+  }
+}
