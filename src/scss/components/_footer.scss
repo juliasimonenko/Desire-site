@@ -1,0 +1,187 @@
+.footer {
+  padding-top: 63px;
+  padding-bottom: 80px;
+  background-color: #dfdfdf;
+
+  &__container {
+    display: flex;
+    justify-content: space-between;
+
+  }
+
+
+
+  &__right {
+    display: flex;
+    justify-content: space-between;
+    width: 385px;
+    margin-right: 88px;
+  }
+
+  &__socials {
+    margin: 0;
+    margin-right: 30px;
+  }
+
+  &__subtitle {
+    margin: 0;
+    margin-bottom: 14px;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 23px;
+    color: var(--dark-color);
+  }
+
+  &__descr {
+    width: 470px;
+    margin-bottom: 17px;
+  }
+
+  &__address {
+    position: relative;
+    display: inline-block;
+    margin: 0;
+    margin-bottom: 23px;
+    padding-left: 31px;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 28px;
+    color: var(--dark-color);
+
+    &::after {
+      content: '';
+      position: absolute;
+      left: 1px;
+      top: 7px;
+      width: 16px;
+      height: 12px;
+      background-image: url('../../img/footer/mail.svg');
+    }
+  }
+
+  &__input {
+    margin-right: 6px;
+    width: 368px;
+    padding: 10px 18px;
+    border-radius: 21px;
+    border: 1px solid rgba(#383636, 0.7);
+    background-color: inherit;
+
+    &::placeholder {
+      font-weight: 400;
+      font-size: 16px;
+      line-height: 28px;
+      color: #A1A1A1;
+    }
+  }
+
+  &__btn {
+    padding: 9px 10px;
+    border-radius: 21px;
+    width: 160px;
+    border: 1px solid var(--dark-color);
+    font-weight: 600;
+    font-size: 16px;
+    color: var(--light-color);
+    background-color: var(--dark-color);
+
+  }
+
+  &__link {
+    margin: 0;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 28px;
+
+    &:not(:last-child) {
+      margin-bottom: 15px;
+    }
+
+    a {
+      color: var(--storm-color);
+      transition: color 0.3s ease-in-out;
+
+      &:hover {
+        color: var(--dark-color);
+      }
+    }
+
+
+    &--fb {
+      padding-left: 28px;
+      position: relative;
+
+      &::after {
+        content: '';
+        position: absolute;
+        background-image: url('../../img/footer/facebook.svg');
+        left: 0;
+        top: 2px;
+        width: 16px;
+        height: 16px;
+      }
+    }
+
+    &--inst {
+      padding-left: 28px;
+      position: relative;
+
+      &::after {
+        content: '';
+        position: absolute;
+        background-image: url('../../img/footer/instagram.svg');
+        left: 0;
+        top: 3px;
+        width: 14px;
+        height: 15px;
+      }
+    }
+
+    &--pin {
+      padding-left: 28px;
+      position: relative;
+
+      &::after {
+        content: '';
+        position: absolute;
+        background-image: url('../../img/footer/pinterest.svg');
+        left: 0;
+        top: 1px;
+        width: 16px;
+        height: 16px;
+      }
+    }
+
+    &--whats {
+      padding-left: 28px;
+      position: relative;
+
+      &::after {
+        content: '';
+        position: absolute;
+        background-image: url('../../img/footer/whatsapp.svg');
+        left: 0;
+        top: 3px;
+        width: 14px;
+        height: 14px;
+      }
+    }
+
+    &--you {
+      padding-left: 28px;
+      position: relative;
+
+      &::after {
+        content: '';
+        position: absolute;
+        background-image: url('../../img/footer/youtube.svg');
+        left: 0;
+        top: 3px;
+        width: 18px;
+        height: 12px;
+      }
+    }
+
+  }
+}
