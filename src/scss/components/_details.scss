@@ -1,0 +1,136 @@
+.details {
+  padding-top: 48px;
+  padding-bottom: 40px;
+  background-image: url('../../img/details-bg.jpg');
+  background-repeat: no-repeat;
+  background-size: 100% 69%;
+  background-position: bottom center;
+
+  &__container {
+    margin: auto;
+    margin-left: 167px;
+    padding: 0 var(--container-offset);
+    width: calc(1340px + (var(--container-offset) * 2));
+    display: flex;
+    justify-content: space-between;
+  }
+
+  &__content {
+    width: 828px;
+  }
+
+  &__title {
+    margin-bottom: 46px;
+    position: relative;
+    padding-top: 9px;
+    text-align: left;
+
+    &::after {
+      content: '';
+      position: absolute;
+      left: 0;
+      bottom: -22px;
+      width: 200px;
+      height: 2px;
+      background-color: #6D7278;
+    }
+  }
+
+  &__descr {
+    margin-bottom: 56px;
+    width: 800px;
+  }
+
+  &__item {
+    @include flex-all-sb;
+
+    &:not(:last-child) {
+      margin-bottom: 50px;
+    }
+  }
+
+  &__text {
+    position: relative;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 23px;
+
+    &::before {
+      content: '';
+      position: absolute;
+      left: 0;
+      bottom: -17px;
+      width: 823px;
+      height: 2px;
+      background-color: var(--light-color);
+    }
+
+    &--one {
+      &::after {
+        content: '';
+        position: absolute;
+        left: 0;
+        bottom: -17px;
+        width: 700px;
+        height: 2px;
+        background-color: var(--dark-color);
+      }
+    }
+
+    &--two {
+      &::after {
+        content: '';
+        position: absolute;
+        left: 0;
+        bottom: -17px;
+        width: 560px;
+        height: 2px;
+        background-color: var(--dark-color);
+      }
+    }
+
+    &--three {
+      &::after {
+        content: '';
+        position: absolute;
+        left: 0;
+        bottom: -17px;
+        width: 640px;
+        height: 2px;
+        background-color: var(--dark-color);
+      }
+    }
+
+    &--four {
+      &::after {
+        content: '';
+        position: absolute;
+        left: 0;
+        bottom: -17px;
+        width: 300px;
+        height: 2px;
+        background-color: var(--dark-color);
+      }
+    }
+  }
+
+  &__pros {
+    padding-right: 7px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 23px;
+    color: var(--dark-color);
+  }
+}
+
+
+.partners {
+  margin: auto 30px;
+  padding-top: 50px;
+  grid-gap: 67px;
+
+  &__item {
+    grid-column: 5 span;
+  }
+}

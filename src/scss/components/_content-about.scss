@@ -1,0 +1,110 @@
+.content-about {
+  padding-top: 130px;
+  padding-bottom: 50px;
+
+  &__title {
+    position: relative;
+    margin-bottom: 49px;
+    width: 823px;
+    text-align: left;
+    line-height: 60px;
+
+    &::after {
+      content: '';
+      position: absolute;
+      left: 3px;
+      bottom: -26px;
+      height: 2px;
+      width: 200px;
+      background-color: #6D7278;
+    }
+  }
+
+  &__descr {
+    padding-left: 287px;
+
+    &:not(:last-child) {
+      margin-bottom: 28px;
+    }
+
+    &:last-child {
+      padding-right: 10px;
+      margin-bottom: 87px;
+    }
+  }
+}
+
+.video-block {
+  position: relative;
+  overflow: hidden;
+  border-radius: 4px;
+  height: 414px;
+
+  &::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    z-index: 3;
+    background-color: rgba(30, 33, 44, 0.6);
+    transition: opacity 0.3s ease-in-out, visibility 0.3s ease-in-out;
+  }
+
+  &--played {
+    &::before {
+      opacity: 0;
+      visibility: hidden;
+    }
+  }
+
+  &__content {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+
+  &__play {
+    @include flex-all-center;
+
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    z-index: 100;
+    border-radius: 100%;
+    width: 80px;
+    height: 80px;
+    background-color: var(--gray-color);
+
+    transform: translate(-50%, -50%);
+    transition: background-color 0.3s ease-in-out, opacity 0.3s ease-in-out, visibility 0.3s ease-in-out;
+
+    svg {
+      width: 39px;
+      height: 39px;
+      fill: var(--light-color);
+    }
+
+    &:focus {
+      outline: 2px solid var(--yellow-color);
+      outline-offset: 2px;
+    }
+
+    &:hover {
+      background-color: var(--yellow-color);
+    }
+
+    &:active {
+      background-color: var(--yellow-color);
+    }
+
+    &--played {
+        opacity: 0;
+        visibility: hidden;
+    }
+  }
+
+
+}

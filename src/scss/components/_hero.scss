@@ -15,9 +15,27 @@
     margin-left: 170px;
     width: 703px;
     height: 815px;
-    background-image: url('../../img/hero-img.png');
-    background-repeat: no-repeat;
-    background-size: cover;
+
+
+    &--one {
+      background-image: url('../../img/hero-img.png');
+      background-repeat: no-repeat;
+      background-size: cover;
+    }
+
+    &--two {
+      background-image: url('../../img/hero-2.png');
+      background-repeat: no-repeat;
+      background-position: right -200px top -205px;
+    }
+
+    &--three {
+      background-image: url('../../img/hero-3.png');
+      background-repeat: no-repeat;
+      background-position: right -107px top -324px;
+    }
+
+
   }
 
   &__right {
