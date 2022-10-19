@@ -1,7 +1,7 @@
 .hero {
   position: relative;
   margin-bottom: 120px;
-  background-image: url('../../img/hero-bg.jpg');
+  background-image: url('../img/hero-bg.jpg');
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
@@ -18,19 +18,19 @@
 
 
     &--one {
-      background-image: url('../../img/hero-img.png');
+      background-image: url('../img/hero-img.png');
       background-repeat: no-repeat;
       background-size: cover;
     }
 
     &--two {
-      background-image: url('../../img/hero-2.png');
+      background-image: url('../img/hero-2.png');
       background-repeat: no-repeat;
       background-position: right -200px top -205px;
     }
 
     &--three {
-      background-image: url('../../img/hero-3.png');
+      background-image: url('../img/hero-3.png');
       background-repeat: no-repeat;
       background-position: right -107px top -324px;
     }

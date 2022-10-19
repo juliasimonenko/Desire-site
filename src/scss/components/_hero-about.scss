@@ -1,11 +1,12 @@
 .hero-about {
   padding-top: 20px;
   padding-bottom: 40px;
-  background-image: url('../../img/hero-about-bg.jpg');
+  background-image: url('../img/hero-about-bg.jpg');
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
   height: 401px;
+
 
   &__title {
     margin-top: 120px;
@@ -13,4 +14,52 @@
     font-size: 60px;
     line-height: 80px;
   }
+
+  &__breadcrumbs {
+    @include flex-v-center;
+
+
+    &--item {
+      position: relative;
+
+      &:not(:last-child) {
+        margin-right: 22px;
+
+        &::after {
+          content: '/';
+          position: absolute;
+          right: -14px;
+          top: 1px;
+          color: #9a9ca5;
+        }
+      }
+    }
+
+    &--link {
+      font-weight: 400;
+      font-size: 14px;
+      line-height: 150%;
+      color: var(--gray-color);
+      transition: color 0.3s ease-in-out;
+
+      &:not([href]) {
+        color: #9a9ca5;
+      }
+
+      &:focus {
+        outline: 2px solid var(--dark-color);
+        outline-offset: 2px;
+      }
+
+      &:hover {
+        color: var(--dark-color);
+
+      }
+
+      &:active {
+        color: var(--dark-color);
+      }
+    }
+  }
+
 }

@@ -1,6 +1,14 @@
 .breadcrumbs {
   @include flex-v-center;
 
+  &__container {
+    background-color: rgba(#dfdfdf, 0.5) ;
+  }
+
+  margin: 0 auto;
+  padding: 15px var(--container-offset);
+  max-width: var(--container-width);
+
   &__item {
     position: relative;
 
