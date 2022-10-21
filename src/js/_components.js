@@ -1,5 +1,6 @@
 import './components/video';
-import './components/portfolio-tabs';
 import './components/sliders';
+import './components/portfolio-tabs';
+
 
 
