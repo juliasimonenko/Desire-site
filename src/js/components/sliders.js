@@ -39,6 +39,15 @@ const blogSlider = new Swiper('.blog-slider', {
   },
 });
 
+const blogOneSlider = new Swiper('.blog-one-slider', {
+  slidesPerView: 1,
+  spaceBetween: 0,
+  loop: true,
 
+  navigation: {
+    nextEl: '.blog-one__next',
+    prevEl: '.blog-one__prev',
+  },
+});
 
 

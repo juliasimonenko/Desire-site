@@ -129,6 +129,8 @@ a {
 
 // стили для чекбокса
 .custom-checkbox {
+  padding-left: 3px;
+  padding-bottom: 19px;
   &__field {
     position: absolute;
     opacity: 0;
@@ -138,45 +140,45 @@ a {
   &__content {
     position: relative;
     display: inline-block;
-
-    padding-left: 27px;
+    padding-left: 31px;
     font-weight: 400;
     font-size: 14px;
-    line-height: 150%;
-    color: red;
+    line-height: 28px;
+    color: #A1A1A1;
    // свои стили текста
   }
 
-  &__field::before {
+  &__content::before {
     content: "";
     position: absolute;
     left: -1px;
     top: 1px;
     display: inline-block;
-    border: 1px solid red;
+    border: 1px solid #979797;
     border-radius: 3px;
-    width: 16px;
-    height: 16px;
+    width: 21px;
+    height: 21px;
     transition: background-color 0.3s ease-in-out;
   }
 
-  &__field::after {
+  &__content::after {
     content: "";
     position: absolute;
     left: -1px;
     top: 1px;
-    width: 16px;
-    height: 16px;
+    width: 21px;
+    height: 21px;
     background-image: url("../img/check.svg");
+    background-color: var(--dark-color);
     background-position: center;
-    background-size: 10px 8px;
+    background-size: 10px 10px;
     background-repeat: no-repeat;
     opacity: 0;
     transition: opacity 0.3s ease-in-out;
   }
 
   &__input:checked+&__field::before {
-    background-color: red;
+    background-color: var(--dark-color);
   }
 
   &__input:checked+&__field::after {
@@ -184,7 +186,7 @@ a {
   }
 
   &__input:focus+&__field {
-    outline: 3px solid red;
+    outline: 3px solid var(--yellow-color);
   }
 }
 
